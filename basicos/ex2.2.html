@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio2.2</title>
+<style>
+body{
+    background-color: lightcoral;
+    color: white;
+    font-family:cursive, 'arial' ;
+    margin: auto;
+    padding: 18px;
+}
+input{
+    border-radius: 10px; 
+    color: red;
+    box-shadow: 20px;
+}
+button{
+    background-color: gray;
+    color: white;
+    border-radius: 8px;
+}
+
+</style>
+
+
+</head>
+<body>
+    <h1>Verificador de Idade<h1>
+    <input type="number" name="" id="anos">
+    <button onclick="rodar()">Verificar</button>
+    <div id="res"></div>
+    <p>Para poder continuar adiante em nosso site verifique se você é maior de idade. Digite a sua idade acima e clique em <strong>Verificar</strong> </p>
+    <script>
+        function rodar() {
+        var idade = Number(document.querySelector('#anos').value)
+        var res = document.querySelector('#res')
+
+            if(idade >=18) {
+            
+            res.innerHTML = `Você tem ${idade} anos, portanto é maior de idade pode continuar.`
+            } else if (idade > 0 && idade < 18){
+                alert( `Você tem ${idade} anos, portanto é menor de idade. Retire-se do site por favor. (Conteúdos sensíveis para menores.)`)
+            } else if (idade <=0) {
+                alert('DIGITE A SUA IDADE')
+            }
+        
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

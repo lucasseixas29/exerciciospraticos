@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" name="" id="num1">
+    <input type="number" name="" id="num2">
+    <button onclick="somar()">Somar</button>
+    <div id="res"></div>
+    <script>
+        function somar() {
+
+        var n1 = Number(document.querySelector("#num1").value)
+        var n2 = Number(document.querySelector("#num2").value)
+        var soma = (n1+n2)
+        var res = document.querySelector('#res')
+        
+
+        if(soma>=100) {
+            res.innerHTML=`A soma de ${n1} + ${n2} é igual a: ${soma}.`
+        } else {
+
+            alert(`A soma de ${n1} + ${n2} NÃO é MAIOR ou IGUAL a 100.`)
+        }
+
+      
+        }
+
+    </script>
+</body>
+</html>
