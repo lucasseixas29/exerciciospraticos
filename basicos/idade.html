@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+    <style>
+        input{
+            width: 100px;
+            height: 20px;
+            margin: 10px;
+            background-color: lightblue;
+            color: white;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        button{
+            background-color: lightblue;
+            color: white;
+            font: 15px bolder;
+            border-radius: 5px;
+        }
+            
+            
+
+        
+
+    </style>
+</head>
+<body>
+    
+<input type="number"id="num1">
+<button onclick="nasc()">Clicar</button>
+<div class="resultado"></div>
+
+
+    <script>
+        function nasc() {
+    let idade = document.getElementById('num1').value
+    let resultado = document.getElementsByClassName('resultado')   
+    let total = 2022 - idade 
+            if(total >= 18) {
+
+                alert(`Você tem ${total} anos. Portanto é maior de idade!(mais de 18 anos)`)
+
+            } else  {
+                alert(`Você tem ${total} anos. Portanto é menor de idade! (menos de 18 anos)`)
+            } 
+
+
+
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto</title>
+</head>
+<body>
+    
+<input type="number" name="" id="num1">
+<button onclick="clicar()">Clicar</button>
+<div class="resultado">Sua resposta irá aparecer aqui!</div>
+
+
+    <script>
+
+        function clicar() {
+            var num = document.querySelector('#num1').value
+            var resultado = document.querySelector('.resultado')
+
+            var total = (num) - (num)*(5/100)
+             
+            resultado.innerHTML = `O valor que você irá pagar com o desconto de 5% será igual a: ${total.toFixed(2)}`
+            
+            
+        
+
+
+        
+    
+        }
+    </script>
+</body>
+</html>
